@@ -1,0 +1,167 @@
+/*GENERAL*/
+
+*{
+    margin: 0;
+    font-family: 'open sans', sans-serif;
+}
+
+body,header,.identite,.cursus,.cursus__date,.cursus__heading,footer,.reference,.loisirs,.loisirs__emoji{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header,footer,.header__photo,.identite,.identite__heading,.cursus__heading,.reference,.loisirs,.loisirs__emoji{
+    width: 100%;
+}
+
+.header__photo, .identite, .loisirs {
+    background-color: #feca07;
+}
+
+h1,h3,h4,footer h5{
+    text-transform: uppercase;
+}
+
+h2,h4,h5,p,ul,.loisirs__emoji i{
+    color: #404040;
+}
+
+h2,h3{
+    font-size: 1.5em;
+}
+
+h1{
+    font-size: 3em;
+    color: #feca07;
+}
+
+h4{
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+h5{
+    font-size: 1.1em;
+    font-weight: lighter;
+    margin-bottom: 0.5em;
+}
+
+h6{
+    font-size: 1em;
+}
+
+ul{
+    list-style: none;
+    font-weight: bolder;
+    padding: 0;
+}
+
+i{
+    color:#feca07;
+}
+
+/*HEADER*/
+
+header{
+    justify-content: center;
+    text-align: center;
+}
+
+.header__photo{
+    padding: 1em 0;
+}
+
+img{
+    border-radius:200px;
+    border: solid 0.4em;
+    border-color: rgba(81, 81, 81, 0.2);
+    width:200px;
+    height:200px;
+}
+
+.header__heading{
+    margin-bottom: 1.2em;
+}
+
+h1 span{
+    font-weight: lighter;
+    color: black
+}
+
+h2 span{
+    border-bottom: solid 0.1em #feca07;
+}
+
+/*BLOC DE GAUCHE*/
+
+.identite{
+    padding-bottom: 1.5em;
+}
+
+.identite ul
+{
+    width: 40%;
+    padding: 1em 0 0 2.6em;
+}
+
+.identite p{
+    padding: 1.5em 3em 1.5em 3em;
+    text-align: justify;
+}
+
+.identite__heading{
+    text-align: center;
+    background-color: #404040;
+    color: #feca07;
+    padding: 0.2em 0;
+}
+
+/*BLOC DE DROITE*/
+
+.cursus__heading{
+    align-items: center;
+    margin: 1.2em;
+    border-bottom: solid 0.1em #feca07;
+}
+
+.cursus__heading i{
+    width: 10%;
+    margin: 0.2em 0.6em 0.2em 0;
+}
+
+.cursus__date{
+    width: 40%;
+    align-content:flex-start;
+}
+
+.cursus__date i{
+    width: 20%;
+    position: relative;
+    top: 0.5em;
+    left: 1em;
+}
+
+.cursus__date ul{
+    width: 80%;
+}
+
+.cursus__detail{
+    width: 50%;
+    padding: 0 1em 1.5em 1em;
+}
+
+/*FOOTER*/
+
+.reference__contact{
+    width: 45%;
+    padding: 0 0.6em 1.5em 0.8em;
+}
+
+.loisirs__emoji{
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.loisirs__emoji i{
+    margin: 0.2em;
+}
