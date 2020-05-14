@@ -224,6 +224,23 @@ h2 span{
         width:30%;
     }
     
+    #moi{
+        order: 3;
+    }
+    
+    .identite p {
+        order: 4;
+    }
+    
+    #contact {
+        order: 1;
+    }
+    
+    .identite ul {
+        order: 2;
+        padding: 0.75em 0 0.75em 2.6em;
+    }
+    
     .cursus__heading i{
     margin: 0.2em 0.2em 0.2em 0;
     }
