@@ -5,7 +5,7 @@
     font-family: 'open sans', sans-serif;
 }
 
-body,header,.identite,.cursus,.cursus__date,.cursus__heading,footer,.reference,.loisirs,.loisirs__emoji{
+body,header,.identite,.cursus,.cursus__date,.cursus__heading,footer,.reference,.loisirs,.loisirs__emoji,.loisirs__emoji i{
     display: flex;
     flex-wrap: wrap;
 }
@@ -164,6 +164,12 @@ h2 span{
 
 .loisirs__emoji i{
     margin: 0.2em;
+    width: 85px;
+    height: 85px;
+    border-radius: 50px;
+    border: 1px solid #404040;
+    justify-content: center;
+    align-items: center;
 }
 
 /*MEDIA QUERIES*/
