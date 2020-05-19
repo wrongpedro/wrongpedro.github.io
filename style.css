@@ -5,12 +5,32 @@
     font-family: 'open sans', sans-serif;
 }
 
-body,header,.identite,.cursus,.cursus__date,.cursus__heading,footer,.reference,.loisirs,.loisirs__emoji,.loisirs__emoji i{
+body,
+header,
+.identite,
+article,
+.cursus,
+.cursus__date,
+.cursus__date i,
+.cursus__heading,
+footer,
+.reference,
+.loisirs,
+.loisirs__emoji,
+.loisirs__emoji i{
     display: flex;
     flex-wrap: wrap;
 }
 
-header,footer,.header__photo,.identite,.identite__heading,.cursus__heading,.reference,.loisirs,.loisirs__emoji{
+header,
+footer,
+.header__photo,
+.identite,
+.identite__heading,
+.cursus__heading,
+.reference,
+.loisirs,
+.loisirs__emoji{
     width: 100%;
 }
 
@@ -73,7 +93,7 @@ header{
 
 img{
     border-radius:200px;
-    border: solid 0.4em;
+    border: solid 0.3em;
     border-color: rgba(81, 81, 81, 0.2);
     width:200px;
     height:200px;
@@ -137,7 +157,7 @@ h2 span{
     width: 20%;
     position: relative;
     top: 0.5em;
-    left: 1em;
+    justify-content: center;
 }
 
 .cursus__date ul{
@@ -195,12 +215,59 @@ h2 span{
         align-content: flex-start;
     }
     
+    .identite p {
+        order: 4;
+    }
+    
+    .identite ul {
+        order: 2;
+        padding: 0.75em 0 0.75em 2.6em;
+    }
+    
+    #contact {
+        order: 1;
+    }
+    
+    #moi{
+        order: 3;
+    }
+    
     .cursus, .reference{
         width: 60%;
     }
     
     .cursus__heading{
-    margin: 1.2em 3em;
+        margin: 1.2em 3em;
+    }
+    
+    .cursus__heading h3{
+        width: 80%;
+    }
+
+    .cursus__date{
+        width: 100%;
+    }
+
+    .cursus__date i{
+        width: 25%;
+        top: 0.3em;
+    }
+
+    .cursus__date ul{
+        width: 75%;
+        display:flex;
+        position: relative;
+        right: 2em;
+        margin-bottom: 0.5em;
+    }
+    
+    .cursus__date li{
+        margin-right: 0.5em;
+    }
+
+    .cursus__detail{
+        width: 100%;
+        padding: 0 3em 2em 3em;
     }
     
     footer{
@@ -211,7 +278,12 @@ h2 span{
     
     .loisirs{
         align-content: flex-end;
-    } 
+    }
+    
+    .reference__contact{
+        width: 100%;
+        padding: 0 0.6em 2em 3em;
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -224,47 +296,32 @@ h2 span{
         width:30%;
     }
     
-    #moi{
-        order: 3;
-    }
-    
-    .identite p {
-        order: 4;
-    }
-    
-    #contact {
-        order: 1;
-    }
-    
-    .identite ul {
-        order: 2;
-        padding: 0.75em 0 0.75em 2.6em;
-    }
-    
     .cursus__heading i{
-    margin: 0.2em 0.2em 0.2em 0;
+        margin: 0.2em 0.2em 0.2em 0;
     }
     
     .cursus__date{
-    width: 40%;
+        width: 40%;
+        margin-left: 2.7em
     }
 
     .cursus__date i{
         width: 10%;
-        margin-left: 30px
     }
 
     .cursus__date ul{
-        width: 65%;
-        margin-left: 1.5em;
+        width: 75%;
+        padding-left: 2.5em;
+        display: block;
     }
 
     .cursus__detail{
-        width: 55%;
+        width: 50%;
+        padding: 0 0 2em 0em;
     }
     
     .reference__contact{
-    width: 40%;
-    padding: 0 0 1.5em 3em;
+        width: 40%;
+        padding: 0 0 1.5em 3em;
     }
 }
