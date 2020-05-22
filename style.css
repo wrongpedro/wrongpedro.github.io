@@ -18,8 +18,11 @@ footer,
 .loisirs,
 .loisirs__emoji,
 .loisirs__emoji i{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 header,
@@ -83,7 +86,9 @@ i{
 /*HEADER*********************************************/
 
 header{
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
 }
 
@@ -138,7 +143,9 @@ h2 span{
 /*BLOC DE DROITE***********************************/
 
 .cursus__heading{
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 1.2em;
     border-bottom: solid 0.1em #feca07;
 }
@@ -150,14 +157,17 @@ h2 span{
 
 .cursus__date{
     width: 40%;
-    align-content:flex-start;
+    -ms-flex-line-pack:start;
+        align-content:flex-start;
 }
 
 .cursus__date i{
     width: 20%;
     position: relative;
     top: 0.5em;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .cursus__date ul{
@@ -181,7 +191,9 @@ h2 span{
 }
 
 .loisirs__emoji{
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 1em 0;
 }
 
@@ -191,8 +203,12 @@ h2 span{
     height: 85px;
     border-radius: 50px;
     border: 1px solid #404040;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 /*MEDIA QUERIES*************************************/
@@ -200,8 +216,12 @@ h2 span{
 @media screen and (min-width: 768px){
     
     header{
-        justify-content: flex-start;
-        align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     
     .header__photo, .identite, .loisirs{
@@ -209,31 +229,43 @@ h2 span{
     }
     
     .header__heading{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         width: 50%;
         padding: 0 0 0 3em;
     }
     
     .identite{
-        align-content: flex-start;
+        -ms-flex-line-pack: start;
+            align-content: flex-start;
     }
     
     .identite p {
-        order: 4;
+        -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 4;
+                order: 4;
     }
     
     .identite ul {
-        order: 2;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
         padding: 0.75em 0 0.75em 2.6em;
     }
     
     #contact {
-        order: 1;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
     }
     
     #moi{
-        order: 3;
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
     }
     
     .cursus, .reference{
@@ -259,6 +291,8 @@ h2 span{
 
     .cursus__date ul{
         width: 75%;
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
         position: relative;
         right: 2em;
@@ -276,12 +310,18 @@ h2 span{
     
     footer{
         width: 100%;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
     }
     
     .loisirs{
-        align-content: flex-end;
+        -ms-flex-line-pack: end;
+            align-content: flex-end;
     }
     
     .reference__contact{
