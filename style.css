@@ -1,4 +1,4 @@
-/*GENERAL*/
+/*GENERAL********************************************/
 
 *{
     margin: 0;
@@ -47,7 +47,7 @@ h2,h4,h5,p,ul,.loisirs__emoji i{
 }
 
 h2,h3{
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 h1{
@@ -56,13 +56,12 @@ h1{
 }
 
 h4{
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-bottom: 5px;
 }
 
 h5{
-    font-size: 1.1em;
-    font-weight: lighter;
+    font-size: 1em;
     margin-bottom: 0.5em;
 }
 
@@ -74,13 +73,14 @@ ul{
     list-style: none;
     font-weight: bolder;
     padding: 0;
+    font-size: 1em;
 }
 
 i{
     color:#feca07;
 }
 
-/*HEADER*/
+/*HEADER*********************************************/
 
 header{
     justify-content: center;
@@ -100,7 +100,7 @@ img{
 }
 
 .header__heading{
-    margin-bottom: 1.2em;
+    padding: 0.8em 0 1.2em 0;
 }
 
 h1 span{
@@ -112,7 +112,7 @@ h2 span{
     border-bottom: solid 0.1em #feca07;
 }
 
-/*BLOC DE GAUCHE*/
+/*BLOC DE GAUCHE***********************************/
 
 .identite{
     padding-bottom: 1.5em;
@@ -135,7 +135,7 @@ h2 span{
     padding: 0.2em 0;
 }
 
-/*BLOC DE DROITE*/
+/*BLOC DE DROITE***********************************/
 
 .cursus__heading{
     align-items: center;
@@ -169,11 +169,15 @@ h2 span{
     padding: 0 1em 1.5em 1em;
 }
 
-/*FOOTER*/
+/*FOOTER***********************************************/
 
 .reference__contact{
-    width: 45%;
-    padding: 0 0.6em 2em 0.8em;
+    width: 100%;
+    padding: 0 1.5em 1.5em 1.5em;
+}
+
+.reference__contact li:last-child {
+    font-weight: lighter;
 }
 
 .loisirs__emoji{
@@ -191,7 +195,7 @@ h2 span{
     align-items: center;
 }
 
-/*MEDIA QUERIES*/
+/*MEDIA QUERIES*************************************/
 
 @media screen and (min-width: 768px){
     
@@ -208,7 +212,7 @@ h2 span{
         display: flex;
         flex-wrap: wrap;
         width: 50%;
-        padding-left: 3em;
+        padding: 0 0 0 3em;
     }
     
     .identite{
@@ -237,7 +241,7 @@ h2 span{
     }
     
     .cursus__heading{
-        margin: 1.2em 3em;
+        margin: 0 2em 1.2em 3em;
     }
     
     .cursus__heading h3{
