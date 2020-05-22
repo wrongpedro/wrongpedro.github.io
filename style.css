@@ -146,6 +146,8 @@ h2 span{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin: 1.2em;
     border-bottom: solid 0.1em #feca07;
 }
